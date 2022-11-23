@@ -1,0 +1,49 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet"> 
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet"> 
+       </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>Jimmy’s Diner</h1>
+                <h2>The best burgers and pizzas in town.</h2>
+            </div>
+        </header>
+        <main id="main">
+            <div id="main-menu" class="main-menu"></div>
+            <div id="order-container" class="order-container">
+                <p class="order-header">Your Order</p>
+                <div id="order" class="order"></div>
+                <div class="column-item total-cost-box">
+                    <p class="total-price-label">Total price:</p>
+                    <p id="total-meal-price" class="total meal-price"></p>
+                </div>
+                <button id="complete-order-btn" class="complete-order-btn green-btn">Complete order</button>
+            </div>
+            
+            <div id="order-complete-msg-box" class="order-complete-msg-box">
+                <p id="order-complete-msg"></p>
+            </div>
+        </main>
+        
+        <div id="checkout-payment-modal" class="checkout-payment-modal">
+            <p class="payment-modal-header">Enter card details</p>
+            <form id="payment-form">
+                <input class="form-input" type="text" id="fname" name="fname" placeholder="Enter your name" required>
+                <input class="form-input" type="text" id="fcardnum" name="fcardnum" placeholder="Enter card number" required>
+                <input class="form-input" type="text" id="fcvv" name="fcvv" placeholder="Enter CVV" required>
+                <input id="pay-btn" class="green-btn pay-btn" type="submit" value="Pay">
+            </form>
+        </div>
+        
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
